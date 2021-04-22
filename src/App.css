@@ -1,0 +1,113 @@
+:root{
+  --card-background-color: rgba(255, 255, 255, 0.75);
+}
+
+body{
+  background-image: url('./components/assets/background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  font-family: 'Antonio', sans-serif;
+}
+/* Header */
+  .header{
+    background: rgb(12,62,133);
+    background: linear-gradient(
+      180deg, rgba(12,62,133,1) 0%, 
+      rgba(14,73,157,1) 20%, 
+      rgba(14,73,157,1) 80%, 
+      rgba(12,62,133,1) 100%);
+    display: flex;
+    flex-direction: column;
+    margin: auto auto 25px auto;
+    padding: 10px 20px;
+  }
+    .header-logo{
+      max-height: 80px;
+      margin-right: 10px;
+    }
+    .title{
+      display: flex;
+      color: White;
+      margin: auto;
+      font-size: 50px;
+      letter-spacing: 0.5px;
+      padding-bottom: 8px;
+      align-items: center;
+    }
+    .score-container{
+      display: flex;
+      margin: auto;
+      width: 400px;
+      justify-content: space-around;
+    }
+      .current-score, .high-score{
+        color: white;
+        margin: 0%;
+        font-size: 30px;
+      }
+/* cards */
+  .board-container{
+    width: 1000px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .cards-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+    .card{
+      margin: 6px;
+      border-radius: 10px;
+      cursor: pointer;
+      outline: none;
+    }
+    .team-container {
+      width: 150px;
+      height: 250px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 150px;
+      grid-template-rows: 200px 50px;
+
+    }
+      .logo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .logo-container img {
+        max-height: 135px;
+        max-width: 100%;
+      }
+      .team-title{
+        display: flex;
+        margin-bottom: 25px;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        vertical-align: middle;
+        font-family: Helvetica, sans-serif;
+      }
+
+/* footer */
+.footer{
+  background-color: #0e499d;
+  display: flex;
+  margin: auto;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding: 6px 0px;
+  font-family: Helvetica, sans-serif;
+}
+  .github-logo{
+    max-height: 25px;
+    margin: 5px;
+  }
