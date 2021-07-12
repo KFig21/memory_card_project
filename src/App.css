@@ -1,102 +1,161 @@
-:root{
+:root {
   --card-background-color: rgba(255, 255, 255, 0.75);
 }
 
-body{
-  background-image: url('./components/assets/background.jpg');
+body {
+  background-image: url("./components/assets/background.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
-  font-family: 'Antonio', sans-serif;
+  font-family: "Antonio", sans-serif;
 }
 /* Header */
-  .header{
-    background: rgb(12,62,133);
-    background: linear-gradient(
-      180deg, rgba(12,62,133,1) 0%, 
-      rgba(14,73,157,1) 20%, 
-      rgba(14,73,157,1) 80%, 
-      rgba(12,62,133,1) 100%);
-    display: flex;
-    flex-direction: column;
-    margin: auto auto 25px auto;
-    padding: 10px 20px;
-  }
-    .header-logo{
-      max-height: 80px;
-      margin-right: 10px;
-    }
-    .title{
-      display: flex;
-      color: White;
-      margin: auto;
-      font-size: 50px;
-      letter-spacing: 0.5px;
-      padding-bottom: 8px;
-      align-items: center;
-    }
-    .score-container{
-      display: flex;
-      margin: auto;
-      width: 400px;
-      justify-content: space-around;
-    }
-      .current-score, .high-score{
-        color: white;
-        margin: 0%;
-        font-size: 30px;
-      }
-/* cards */
-  .board-container{
-    width: 1000px;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    margin-bottom: 50px;
-  }
-  .cards-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-  }
-    .card{
-      margin: 6px;
-      border-radius: 10px;
-      cursor: pointer;
-      outline: none;
-    }
-    .team-container {
-      width: 150px;
-      height: 250px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: 150px;
-      grid-template-rows: 200px 50px;
+.header {
+  position: fixed;
+  background: rgb(12, 62, 133);
+  background: linear-gradient(
+    180deg,
+    rgba(12, 62, 133, 1) 0%,
+    rgba(14, 73, 157, 1) 20%,
+    rgba(14, 73, 157, 1) 80%,
+    rgba(12, 62, 133, 1) 100%
+  );
+  display: flex;
+  flex-direction: row;
+  margin: auto auto 25px auto;
+  padding: 10px 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+.header-logo {
+  max-height: 80px;
+  margin-right: 10px;
+}
+.title {
+  display: flex;
+  color: White;
+  margin: auto;
+  font-size: 50px;
+  letter-spacing: 0.5px;
+  padding-bottom: 8px;
+  align-items: center;
+}
+.score-container {
+  display: flex;
+  margin: auto;
+  width: 400px;
+  justify-content: space-around;
+}
+.current-score,
+.high-score {
+  color: white;
+  margin: 0%;
+  font-size: 30px;
+}
 
-    }
-      .logo-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .logo-container img {
-        max-height: 135px;
-        max-width: 100%;
-      }
-      .team-title{
-        display: flex;
-        margin-bottom: 25px;
-        font-size: 20px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        vertical-align: middle;
-        font-family: Helvetica, sans-serif;
-      }
+/* cards */
+.board-container {
+  width: 1000px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.cards-container {
+  margin-top: 130px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  margin: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+.team-container {
+  width: 150px;
+  height: 250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 150px;
+  grid-template-rows: 200px 50px;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-container img {
+  max-height: 135px;
+  max-width: 100%;
+}
+.team-title {
+  display: flex;
+  margin-bottom: 25px;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Helvetica, sans-serif;
+}
+
+/* modal */
+.modal-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 35vh;
+  background-color: rgb(219, 219, 219);
+  border-radius: 10px;
+  border: solid 4px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.game-over {
+  color: Black;
+  font-size: 40px;
+  margin: 10px auto;
+}
+
+.game-over-score {
+  color: Black;
+  font-size: 28px;
+  margin: 4px auto 8px auto;
+}
+
+.play-again-button {
+  color: white;
+  background-color: #0e499d;
+  font-family: "Antonio", sans-serif;
+  margin: 10px auto;
+  font-size: 22px;
+  border: none;
+  border-radius: 3px;
+  padding: 7px 12px 8px 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+.play-again-button:hover {
+  background-color: #2564bb;
+}
 
 /* footer */
-.footer{
+.footer {
   background-color: #0e499d;
   display: flex;
   margin: auto;
@@ -107,7 +166,7 @@ body{
   padding: 6px 0px;
   font-family: Helvetica, sans-serif;
 }
-  .github-logo{
-    max-height: 25px;
-    margin: 5px;
-  }
+.github-logo {
+  max-height: 25px;
+  margin: 5px;
+}
