@@ -5,8 +5,8 @@ function Header({ score, highScore }) {
   return (
     <header className="header">
       <h1 className="title">
-        <img className="header-logo" src={nbalogo} alt="nba logo"></img>NBA
-        Memory Game
+        <img className="header-logo" src={nbalogo} alt="nba logo"></img>
+        <span>NBA Memory Game</span>
       </h1>
 
       <div className="score-container">
