@@ -28,17 +28,17 @@ body {
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6);
 }
 .header-logo {
-  max-height: 80px;
+  max-height: 60px;
   margin-right: 10px;
 }
 .title {
   display: flex;
   color: White;
   margin: auto;
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: 0.5px;
-  padding-bottom: 8px;
   align-items: center;
+  justify-content: center;
 }
 .score-container {
   display: flex;
