@@ -7,6 +7,7 @@
 
 <h3>Features:</h3>
 - Current and High scores
+- Dynamically updated state with React
 - Responsive Design
  
 <h3>Demo GIF</h3>
