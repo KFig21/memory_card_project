@@ -6,8 +6,9 @@
 <p>This project was built for The Odin Project JavaScript curriculum. The goal of the project was to learn how to manage state within a React application. In order for the game to function state is managed for the current score, high score, and cards selected. This project was made with the React JS Library and CSS.</p>
 
 <h3>Features:</h3>
-- Current and High scores
+
 - Dynamically updated state with React
+- Current and High scores
 - Responsive Design
  
 <h3>Demo GIF</h3>
